@@ -1,0 +1,22 @@
+<h1>*ngIf Directives</h1>
+
+<h2>ngIf-Else</h2>
+<div *ngIf="login; else elseBlock">
+    <a href="">Logout</a>
+</div>
+<ng-template #elseBlock>
+    <a href="">Login</a>
+</ng-template>
+
+
+<h2>ngIf 0,1,2...</h2>
+<div *ngIf="block==1">
+    <a href="">Heading 1</a>
+</div>
+<div *ngIf="block==2">
+    <a href="">Heading 2</a>
+</div>
+<div *ngIf="block==3">
+    <a href="">Heading 3</a>
+</div>
+<button (click)="updateBlock()">Update Block</button>

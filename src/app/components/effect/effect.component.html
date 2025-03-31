@@ -1,0 +1,9 @@
+<h1>Effect</h1>
+
+<h2>{{count()}}</h2>
+<button (click)="changeVal()" style="font-size: large;" >Update Count</button>
+
+
+@if (displayHeading) {
+    <h2 [style.backgroundColor]="mColor" >Number {{count()}} is Selected</h2>
+}

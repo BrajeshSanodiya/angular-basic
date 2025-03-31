@@ -1,0 +1,59 @@
+<h1>Signal</h1>
+
+<h2>=> Basic Signal</h2>
+
+<ul class="increment">
+  <li>
+    <button
+      style="margin-right: 10px; padding: 8px"
+      (click)="count.set(count() - 1)"
+    >
+      Decrement
+    </button>
+  </li>
+  <li>
+    {{ count() }}
+  </li>
+  <li>
+    <button
+      style="margin-left: 10px; padding: 8px"
+      (click)="count.set(count() + 1)"
+    >
+      Increment
+    </button>
+  </li>
+</ul>
+
+<h2>=> DataType</h2>
+<ul class="increment">
+  <li>
+    <h3>{{ data() }}</h3>
+  </li>
+  <li>
+    <button style="margin-left: 10px; padding: 8px" (click)="updateData()">
+      Update
+    </button>
+  </li>
+  <li>
+    <h3 style="margin-left: 50px">{{ readCount() }}</h3>
+  </li>
+</ul>
+
+<h2>=> Computed Signal</h2>
+<table>
+  <tr>
+    <td>X</td>
+    <td>{{ x() }}</td>
+  </tr>
+  <tr>
+    <td>Y</td>
+    <td>{{ y() }}</td>
+  </tr>
+  <tr>
+    <td>Z</td>
+    <td>{{ z() }}</td>
+  </tr>
+</table>
+<button style="margin-left: 10px; padding: 8px" (click)="updateX()">
+  Update X
+</button>

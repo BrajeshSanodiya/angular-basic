@@ -1,0 +1,21 @@
+
+
+.increment{
+    display: flex;
+    list-style-type:none;
+    justify-content: space-between;
+    width: 250px;
+}
+
+li{
+    align-content: center;
+}
+
+table{
+    margin-left: 20px;
+
+}
+
+td{
+    width: 100px;
+}

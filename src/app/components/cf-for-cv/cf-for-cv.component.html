@@ -1,0 +1,22 @@
+<h1>For Loop Contextual Variables</h1>
+
+@for (item of users; track item;
+let i=$index;
+let f=$first;
+let l=$last;
+) {
+    <h4>Total count = {{$count}}</h4>
+    @if ($odd) {
+        <h3 class="h3_bg">{{i+1}} {{item}}</h3>
+    } @else {
+        <h3 class="h3_bg_light">{{i+1}} {{item}}</h3>
+    }
+}
+
+<h2>Empty Array For Loop</h2>
+@for (item of emptyUser; track $index) {
+
+}
+@empty {
+    <h3>No Records Found</h3>
+}

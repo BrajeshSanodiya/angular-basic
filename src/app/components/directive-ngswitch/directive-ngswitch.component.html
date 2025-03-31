@@ -1,0 +1,23 @@
+<h1>*ngSwitch Directives</h1>
+
+<button style="padding: 5px; margin: 3px;" (click)="changeColor('red')"> Red Color</button>
+<button style="padding: 5px; margin: 3px;" (click)="changeColor('green')"> Green Color</button>
+<button style="padding: 5px; margin: 3px;" (click)="changeColor('yellow')"> Yellow Color</button>
+<button style="padding: 5px; margin: 3px;" (click)="changeColor('voilet')"> Voilet Color</button>
+<button style="padding: 5px; margin: 3px;" (click)="changeColor('pink')"> Pink Color</button>
+<button style="padding: 5px; margin: 3px;" (click)="changeColor('')"> Default Color</button>
+
+<div [ngSwitch]="color">
+    <div *ngSwitchCase="'red'"><h2 style="background-color: red;">Red Color</h2>
+    </div>
+    <div *ngSwitchCase="'green'"><h2 style="background-color: green;">Green Color</h2>
+    </div>
+    <div *ngSwitchCase="'yellow'"><h2 style="background-color: yellow;">Yellow Color</h2>
+    </div>
+    <div *ngSwitchCase="'voilet'"><h2 style="background-color: blueviolet;">Voilet Color</h2>
+    </div>
+    <div *ngSwitchCase="'pink'"><h2 style="background-color: pink;">Pink Color</h2>
+    </div>
+    <div *ngSwitchDefault><h2 style="background-color: black; color: white"> No Color Matched</h2></div>
+</div>
+

@@ -1,0 +1,30 @@
+<h1>Control Flow | Switch Case Angular 19</h1>
+
+
+<button style="padding: 10px; margin-bottom: 10px;" (click)="handleColor('green')">Green</button>
+<button style="padding: 10px; margin-bottom: 10px;" (click)="handleColor('red')">Red</button>
+<button style="padding: 10px; margin-bottom: 10px;" (click)="handleColor('blue')">Blue</button>
+<button style="padding: 10px; margin-bottom: 10px;" (click)="handleColor('orange')">Orange</button>
+<button style="padding: 10px; margin-bottom: 10px;" (click)="handleColor('gold')">Gold</button>
+
+<input type="text" (input)="handleInput($event)" placeholder="Enter Number">
+
+
+@switch (color) {
+    @case ('red') {
+        <h1 style=" background-color: red"> Red Color</h1>
+    }
+    @case ('green') {
+        <h1 style="background-color: green"> Green Color</h1>
+    }
+    @case ('blue') {
+        <h1 style="background-color: blue; color: white"> Blue Color</h1>
+    }
+    @case ('orange') {
+        <h1 style="background-color: orange"> Orange Color</h1>
+    }
+    @default {
+        <h1 style="background-color: black; color: white"> No Color Matched</h1>
+    }
+
+}

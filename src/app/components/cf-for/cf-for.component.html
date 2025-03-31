@@ -1,0 +1,15 @@
+<h1>Control Flow | For Loop Angular 19</h1>
+
+@for (item of users; track item) {
+    <h2>{{item}}</h2>
+}
+
+@for (student of students; track student.name; let id=$index) {
+    <h3>
+        <span>{{id}}</span>
+        <span>{{student.name}}</span>
+        <span>{{student.email}}</span>
+        <button (click)="getName(student.name)">Get Name</button>
+    </h3>
+}
+
