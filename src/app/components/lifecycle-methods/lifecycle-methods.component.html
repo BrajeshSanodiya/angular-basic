@@ -1,0 +1,5 @@
+<h1>Life Cycle Methods in Angular</h1>
+
+<app-lifecycle-methods-user #userComp  *ngIf="count<5" [counter]="count" ></app-lifecycle-methods-user>
+
+<button (click)="updateCounter()" >Counter - {{count}}</button>

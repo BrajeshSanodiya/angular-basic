@@ -8,7 +8,6 @@ import { DirectiveNgforComponent } from './components/directive-ngfor/directive-
 import { DirectiveNgifComponent } from './components/directive-ngif/directive-ngif.component';
 import { CfIfComponent } from './components/cf-if/cf-if.component';
 import { DirectiveNgswitchComponent } from './components/directive-ngswitch/directive-ngswitch.component';
-import { HomeComponent } from './components/routing-home/home.component';
 import { DashbordComponent } from './components/routing-dashbord/dashbord.component';
 import { FormReactiveComponent } from './components/form-reactive/form-reactive.component';
 import { FormReactiveGroupingComponent } from './components/form-reactive-grouping/form-reactive-grouping.component';
@@ -17,6 +16,7 @@ import { PassdataParentcomponentComponent } from "./components/passdata-parentco
 import { Passdata2ParentcomponentComponent } from "./components/passdata2-parentcomponent/passdata2-parentcomponent.component";
 import { PerdefinePipeComponent } from "./components/perdefine-pipe/perdefine-pipe.component";
 import { CustomPipeComponent } from "./components/custom-pipe/custom-pipe.component";
+import { LifecycleMethodsComponent } from "./components/lifecycle-methods/lifecycle-methods.component";
 
 @Component({
   selector: 'app-root',
@@ -37,7 +37,8 @@ import { CustomPipeComponent } from "./components/custom-pipe/custom-pipe.compon
     PassdataParentcomponentComponent,
     Passdata2ParentcomponentComponent,
     PerdefinePipeComponent,
-    CustomPipeComponent
+    CustomPipeComponent,
+    LifecycleMethodsComponent
 ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
