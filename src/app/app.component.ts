@@ -13,6 +13,8 @@ import { DashbordComponent } from './components/routing-dashbord/dashbord.compon
 import { FormReactiveComponent } from './components/form-reactive/form-reactive.component';
 import { FormReactiveGroupingComponent } from './components/form-reactive-grouping/form-reactive-grouping.component';
 import { FormTemplateDrivenComponent } from './components/form-template-driven/form-template-driven.component';
+import { PassdataParentcomponentComponent } from "./components/passdata-parentcomponent/passdata-parentcomponent.component";
+import { Passdata2ParentcomponentComponent } from "./components/passdata2-parentcomponent/passdata2-parentcomponent.component";
 
 @Component({
   selector: 'app-root',
@@ -30,7 +32,9 @@ import { FormTemplateDrivenComponent } from './components/form-template-driven/f
     FormReactiveComponent,
     FormReactiveGroupingComponent,
     FormTemplateDrivenComponent,
-  ],
+    PassdataParentcomponentComponent,
+    Passdata2ParentcomponentComponent
+],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
