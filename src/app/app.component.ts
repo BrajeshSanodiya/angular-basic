@@ -15,6 +15,7 @@ import { FormReactiveGroupingComponent } from './components/form-reactive-groupi
 import { FormTemplateDrivenComponent } from './components/form-template-driven/form-template-driven.component';
 import { PassdataParentcomponentComponent } from "./components/passdata-parentcomponent/passdata-parentcomponent.component";
 import { Passdata2ParentcomponentComponent } from "./components/passdata2-parentcomponent/passdata2-parentcomponent.component";
+import { PerdefinePipeComponent } from "./components/perdefine-pipe/perdefine-pipe.component";
 
 @Component({
   selector: 'app-root',
@@ -33,7 +34,8 @@ import { Passdata2ParentcomponentComponent } from "./components/passdata2-parent
     FormReactiveGroupingComponent,
     FormTemplateDrivenComponent,
     PassdataParentcomponentComponent,
-    Passdata2ParentcomponentComponent
+    Passdata2ParentcomponentComponent,
+    PerdefinePipeComponent
 ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
