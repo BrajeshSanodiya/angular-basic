@@ -16,6 +16,7 @@ import { FormTemplateDrivenComponent } from './components/form-template-driven/f
 import { PassdataParentcomponentComponent } from "./components/passdata-parentcomponent/passdata-parentcomponent.component";
 import { Passdata2ParentcomponentComponent } from "./components/passdata2-parentcomponent/passdata2-parentcomponent.component";
 import { PerdefinePipeComponent } from "./components/perdefine-pipe/perdefine-pipe.component";
+import { CustomPipeComponent } from "./components/custom-pipe/custom-pipe.component";
 
 @Component({
   selector: 'app-root',
@@ -35,7 +36,8 @@ import { PerdefinePipeComponent } from "./components/perdefine-pipe/perdefine-pi
     FormTemplateDrivenComponent,
     PassdataParentcomponentComponent,
     Passdata2ParentcomponentComponent,
-    PerdefinePipeComponent
+    PerdefinePipeComponent,
+    CustomPipeComponent
 ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
