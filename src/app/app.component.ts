@@ -14,10 +14,12 @@ import { FormReactiveGroupingComponent } from './components/form-reactive-groupi
 import { FormTemplateDrivenComponent } from './components/form-template-driven/form-template-driven.component';
 import { PassdataParentcomponentComponent } from "./components/passdata-parentcomponent/passdata-parentcomponent.component";
 import { Passdata2ParentcomponentComponent } from "./components/passdata2-parentcomponent/passdata2-parentcomponent.component";
-import { PerdefinePipeComponent } from "./components/perdefine-pipe/perdefine-pipe.component";
-import { CustomPipeComponent } from "./components/custom-pipe/custom-pipe.component";
+import { PerdefinePipeComponent } from "./components/pipe-perdefine/perdefine-pipe.component";
+import { CustomPipeComponent } from "./components/pipe-custom/custom-pipe.component";
 import { LifecycleMethodsComponent } from "./components/lifecycle-methods/lifecycle-methods.component";
-import { ServiceComponent } from "./components/service/service.component";
+import { ServiceComponent } from "./components/service-product/productservice.component";
+import { ServiceStudentComponent } from "./components/service-student/service-student.component";
+import { ServiceUserComponent } from "./components/service-user/service-user.component";
 
 @Component({
   selector: 'app-root',
@@ -40,7 +42,9 @@ import { ServiceComponent } from "./components/service/service.component";
     PerdefinePipeComponent,
     CustomPipeComponent,
     LifecycleMethodsComponent,
-    ServiceComponent
+    ServiceComponent,
+    ServiceStudentComponent,
+    ServiceUserComponent
 ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
