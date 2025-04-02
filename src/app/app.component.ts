@@ -17,6 +17,7 @@ import { Passdata2ParentcomponentComponent } from "./components/passdata2-parent
 import { PerdefinePipeComponent } from "./components/perdefine-pipe/perdefine-pipe.component";
 import { CustomPipeComponent } from "./components/custom-pipe/custom-pipe.component";
 import { LifecycleMethodsComponent } from "./components/lifecycle-methods/lifecycle-methods.component";
+import { ServiceComponent } from "./components/service/service.component";
 
 @Component({
   selector: 'app-root',
@@ -38,7 +39,8 @@ import { LifecycleMethodsComponent } from "./components/lifecycle-methods/lifecy
     Passdata2ParentcomponentComponent,
     PerdefinePipeComponent,
     CustomPipeComponent,
-    LifecycleMethodsComponent
+    LifecycleMethodsComponent,
+    ServiceComponent
 ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
