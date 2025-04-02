@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { StudentService } from '../../services/student.service';
+import { Products } from '../../interfaces/Products';
 
 @Component({
   selector: 'app-service',
@@ -9,7 +10,7 @@ import { StudentService } from '../../services/student.service';
 })
 export class ServiceComponent {
 
-productList:any;
+productList:Products|undefined;
 
 studentData :{
     name: string;
@@ -21,9 +22,10 @@ studentData :{
 
   ngOnInit(){
     this.studentData=this.studentService.getStudentData();
-    this.studentService.getProductList().subscribe((data:any)=>{
+    this.studentService.getProductList().subscribe((data:Products)=>{
       console.log(data);
-      this.productList=data.products
+      this.productList=data
+      console.log(this.productList);
     })
     
   }
