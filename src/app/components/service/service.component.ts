@@ -9,6 +9,8 @@ import { StudentService } from '../../services/student.service';
 })
 export class ServiceComponent {
 
+productList:any;
+
 studentData :{
     name: string;
     age: number;
@@ -18,7 +20,14 @@ studentData :{
   constructor(private studentService:StudentService){}
 
   ngOnInit(){
-    this.studentData=this.studentService.getProductData();
+    this.studentData=this.studentService.getStudentData();
+    this.studentService.getProductList().subscribe((data:any)=>{
+      console.log(data);
+      this.productList=data.products
+    })
+    
   }
+
+
 
 }
