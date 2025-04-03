@@ -20,6 +20,7 @@ import { LifecycleMethodsComponent } from "./components/lifecycle-methods/lifecy
 import { ServiceComponent } from "./components/service-product/productservice.component";
 import { ServiceStudentComponent } from "./components/service-student/service-student.component";
 import { ServiceUserComponent } from "./components/service-user/service-user.component";
+import { RoutingLazyHomeComponent } from "./components/routing-lazy-home/routing-lazy-home.component";
 
 @Component({
   selector: 'app-root',
@@ -44,7 +45,8 @@ import { ServiceUserComponent } from "./components/service-user/service-user.com
     LifecycleMethodsComponent,
     ServiceComponent,
     ServiceStudentComponent,
-    ServiceUserComponent
+    ServiceUserComponent,
+    RoutingLazyHomeComponent
 ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',

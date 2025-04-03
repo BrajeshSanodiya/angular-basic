@@ -13,6 +13,8 @@ export const routes: Routes = [
     {path:'contact', component:ContactComponent},
     {path:'profile', component:ProfileComponent, data:{name:"Braj Sano"}},
     {path:'user/:id/:name/:email/:age', component:UserComponent},
+    {path:'admin', loadComponent:()=>import('./components/routing-lazy-admin/routing-lazy-admin.component').then((c)=>c.RoutingLazyAdminComponent)},
     {path:'', component:HomeComponent},
     {path:'**', component:PageNotFoundComponent}
+    
 ];
