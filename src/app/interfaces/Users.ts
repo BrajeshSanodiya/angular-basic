@@ -1,5 +1,6 @@
 export interface Users{
     name:string,
     gmail:string,
-    age:number
+    age:number,
+    id:string
 }

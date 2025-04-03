@@ -1,4 +1,37 @@
 <h1>Service in Angular :: Own Json Server :==></h1>
-@for (user of userList; track $index) {
-    <h3>{{user.name}} | {{user.age}} | {{user.gmail}}</h3>
-}
+
+<form #userForm="ngForm" (ngSubmit)="formSubmit(userForm.value)">
+  <input type="text" placeholder="enter name" name="name" [ngModel]="selectedUser?.name" />
+  <br /><br />
+  <input type="text" placeholder="enter email" name="gmail" [ngModel]="selectedUser?.gmail" />
+  <br /><br />
+  <input type="number" placeholder="enter age" name="age" [ngModel]="selectedUser?.age" />
+  <br /><br />
+  @if (!selectedUser) {
+    <button>Add User</button>
+  }@else{
+    <button>Update User</button>
+  }
+  
+  <br/><br/>
+</form>
+
+<table>
+  @for (user of userList; track $index) {
+  <tr>
+    <td>
+      <ul>
+        <li>{{ user.id }}&nbsp;&nbsp;</li>
+        <li>{{ user.name }}&nbsp;&nbsp;</li>
+        <li>{{ user.age }}&nbsp;&nbsp;</li>
+        <li>{{ user.gmail }}&nbsp;&nbsp;</li>
+      </ul>
+    </td>
+    <td>
+      <button (click)="deleteUser(user.id)">Delete</button>
+      <br><br>
+      <button (click)="selectUser(user.id)">Update</button>
+    </td>
+  </tr>
+  }
+</table>

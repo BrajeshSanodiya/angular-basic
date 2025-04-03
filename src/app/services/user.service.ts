@@ -13,4 +13,24 @@ export class UserService {
     const url = 'https://json-server-d401a924f117.herokuapp.com/users';
     return this.http.get<Users[]>(url);
   }
+
+  addUser(user:Users):Observable<Users>{
+    const url='https://json-server-d401a924f117.herokuapp.com/users'
+    return this.http.post<Users>(url,user)
+  }
+
+  deleteUser(id:string):Observable<Users>{
+    const url='https://json-server-d401a924f117.herokuapp.com/users'
+    return this.http.delete<Users>(url+"/"+id)
+  }
+
+  selectUser(id:string):Observable<Users>{
+    const url='https://json-server-d401a924f117.herokuapp.com/users'
+    return this.http.get<Users>(url+"/"+id)
+  }
+
+  updateUser(user:Users):Observable<Users>{
+    const url='https://json-server-d401a924f117.herokuapp.com/users'
+    return this.http.patch<Users>(url+"/"+user.id,user)
+  }
 }
