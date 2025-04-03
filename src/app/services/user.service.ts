@@ -31,6 +31,6 @@ export class UserService {
 
   updateUser(user:Users):Observable<Users>{
     const url='https://json-server-d401a924f117.herokuapp.com/users'
-    return this.http.patch<Users>(url+"/"+user.id,user)
+    return this.http.put<Users>(url+"/"+user.id,user)
   }
 }
