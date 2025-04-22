@@ -1,0 +1,19 @@
+<h1>NG Template</h1>
+
+<h3>This is Template Example 1</h3>
+<ng-template #myTemplate>
+    <h3>Hello</h3>
+</ng-template>
+<div *ngTemplateOutlet="myTemplate">
+</div>
+
+<div>
+    <h3>This is Template Example 2</h3>
+    <button *ngIf="haveData; else notifyMe" (click)="swithData()">Add to Card</button>
+    <ng-template #notifyMe>
+        <button  (click)="swithData()">Notify Me!</button>
+    </ng-template>
+</div>
+
+
+

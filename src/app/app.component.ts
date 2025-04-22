@@ -21,6 +21,7 @@ import { ServiceComponent } from "./components/service-product/productservice.co
 import { ServiceStudentComponent } from "./components/service-student/service-student.component";
 import { ServiceUserComponent } from "./components/service-user/service-user.component";
 import { RoutingLazyHomeComponent } from "./components/routing-lazy-home/routing-lazy-home.component";
+import { NgTemplateComponent } from "./components/ng-template/ng-template.component";
 
 @Component({
   selector: 'app-root',
@@ -46,7 +47,8 @@ import { RoutingLazyHomeComponent } from "./components/routing-lazy-home/routing
     ServiceComponent,
     ServiceStudentComponent,
     ServiceUserComponent,
-    RoutingLazyHomeComponent
+    RoutingLazyHomeComponent,
+    NgTemplateComponent
 ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
